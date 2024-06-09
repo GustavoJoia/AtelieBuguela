@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'Daylight Dreams';
+    src: url('../fonts/DaylightDreams.otf') format('truetype');
+}
+/*Criando variáveis e automatizando cores e fontes*/
+:root{
+    --black: #000;
+    --white: #FFF;
+    --white-all: #F2F2F2;
+    --yellow: #F6BF0C;
+    --orange: #FA960D;
+    --brown: #2A1E12;
+    --font-logo: 'Daylight Dreams', sans-serif;
+    --font-text: 'Inter', sans-serif;
+}
+
+/*Aplicando estilizações padrão gerais*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+p, ul{
+    font-family: var(--font-text);
+}
+
+h2{
+    font-family: var(--font-logo);
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: var(--brown);
+}
+
+body{
+    background-color: var(--white-all);
+}
+
+/*Wave padrão desktop*/
+header{
+    width: 100%;
+    height: 40vh;
+    background-image: url("../img/wave-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.logo-buguela{
+    width: 60px;
+}
+
+/*Wave para mobile*/
+@media screen and (max-width: 991px){
+    .container-links{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 568px){
+    header{
+        background-image: url("../img/wave-mobile.svg");
+    }
+}
+
+
+/*Footer*/
+footer{
+    width: 100%;
+}
+
+.logo-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-logo);
+    text-transform: uppercase;
+    color: var(--brown);
+}
+
+.itens-footer, .links-footer ul{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.links-footer ul li{
+    list-style-type: none;
+}
+
+.links-footer ul li a{
+    color: #2A1E12;
+}
+
+.circle img{
+    width: 35px;
+}
+
+.circle{
+    background-color: var(--yellow);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+
+/*Página de Vitrine*/
+.storefront-image{
+    background-color: var(--brown);
+    border-radius: 25px;
+    margin: 1%;
+    height: 15vh;
+}
+
+.storefront-20{
+    width: 20%;
+}
+
+.storefront-50{
+    width: 55%;
+    height: 30vh;
+}
+
+.storefront-60{
+    width: 40%;
+    height: 62vh;
+}
+
+.storefront-80{
+    width: 80%;
+}
+
+.storefront-100{
+    width: 98%;
+}
+
+.storefront-95{
+    width: 94%;
+    height: 30vh;
+
+}
+
+.storefront-one{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.storefront-two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.storefront-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.storefront-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: end;
+}
+
+/* Sobre nós */
+
+#box-aboutus {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 5%; 
+}
+
+.aboutus {
+    max-width: 400px;
+}
+
+.aboutus h3 {
+    font-size: 24px;
+}
+
+.aboutus p {
+    margin-top: 20px;
+}
+
+#btn-aboutus {
+    background-color: var(--yellow);
+    width: 125px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#btn-aboutus:hover {
+    background-color: #d9aa11;
+    transition: 1s;
+}
