@@ -171,3 +171,42 @@ footer{
     width: 100%;
     justify-content: end;
 }
+
+/*Novidades da Loja*/
+
+#novidadesLoja {
+    color: #2A1E12;
+}
+
+.custom-img-size {
+    max-width: 500px;
+    height: auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: #F6BF0C;
+    width: auto;
+    font-size: 16px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black;
+}
+
+.carousel-item img {
+    margin: 0 auto;
+}
+
+#carouselExampleIndicators .carousel-control-prev,
+#carouselExampleIndicators .carousel-control-next {
+    background-color: #F6BF0C;
+    width: auto;
+    font-size: 16px;
+    margin-top: -40px;
+}
+
+/* Em alta */
+
+#emAlta {
+    color: #2A1E12;
+}
