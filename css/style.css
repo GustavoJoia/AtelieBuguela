@@ -171,3 +171,149 @@ footer{
     width: 100%;
     justify-content: end;
 }
+
+/* Sobre nós */
+#box-aboutus {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 5%; 
+}
+
+.aboutus {
+    max-width: 400px;
+}
+
+.aboutus h3 {
+    font-size: 24px;
+}
+
+.aboutus p {
+    margin-top: 20px;
+}
+
+#btn-aboutus {
+    background-color: var(--yellow);
+    width: 125px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#btn-aboutus:hover {
+    background-color: #d9aa11;
+    transition: 1s;
+}
+
+/* Contate-nos */
+.contact-section {
+    background: url('../img/Buguela-contact-bg.svg') no-repeat center center;
+    background-size: cover;
+    padding: 4% 0;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group1 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    text-align: center;
+    width: 14%;
+    padding: 1.5%;
+    border-radius: 50%;
+    background-color: var(--white-all);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.contact-icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    width: 50%;
+}
+
+.form-group2 {
+    margin-top: 15px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.contact-desc {
+    height: 30vh;
+}
+
+#contact-submit {
+    background-color: var(--brown);
+    color: var(--yellow);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 991px){
+    .contact-section {
+        padding: 6% 0;
+    }
+
+    .contact-container {
+        width: 75%;
+    }
+
+    .contact-icon {
+        width: 45%;
+        padding: 5%;
+        margin-right: 20px;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    .contact-desc {
+        height: 25vw;
+    }
+}
