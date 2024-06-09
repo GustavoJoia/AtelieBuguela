@@ -107,3 +107,67 @@ footer{
     padding: 1rem;
     border-radius: 50%;
 }
+
+
+/*Página de Vitrine*/
+.storefront-image{
+    background-color: var(--brown);
+    border-radius: 25px;
+    margin: 1%;
+    height: 15vh;
+}
+
+.storefront-20{
+    width: 20%;
+}
+
+.storefront-50{
+    width: 55%;
+    height: 30vh;
+}
+
+.storefront-60{
+    width: 40%;
+    height: 62vh;
+}
+
+.storefront-80{
+    width: 80%;
+}
+
+.storefront-100{
+    width: 98%;
+}
+
+.storefront-95{
+    width: 94%;
+    height: 30vh;
+
+}
+
+.storefront-one{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.storefront-two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.storefront-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.storefront-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: end;
+}
