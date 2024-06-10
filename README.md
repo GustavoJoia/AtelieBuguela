@@ -61,7 +61,7 @@ let devs = {
 <center>
 
 #
-[![Tech usage](https://skillicons.dev/icons?i=html,css,js&theme=dark&perline=10)](https://skillicons.dev)
+[![Tech usage](https://skillicons.dev/icons?i=html,css,js,bootstrap&theme=dark&perline=10)](https://skillicons.dev)
 #
 
 </center>
