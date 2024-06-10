@@ -1,12 +1,8 @@
-<center>
-
 # Vitrine virtual - Buguela
 
-</center>
+<img src="./img/imagem_2024-06-10_000259954.png">
 
-Site desenvolvido para compreender a porção de Desenvolvimento Web do projeto interdisciplinar do primeiro semestre: desenvolver uma vitrine virtual para o Ateliê Buguela.
-
-# Para colaboradores! Leia abaixo:
+## Para colaboradores! Leia abaixo:
 
 ### Passo-a-passo:
 
@@ -49,10 +45,10 @@ git push -u origin tela1
 # Progresso das páginas
 ```js
 let done_pages = {
-    'Home': false,
-    'About': false,
-    'Products': false,
-    'Contact': false
+    'Home': true,
+    'About': true,
+    'Products': true,
+    'Contact': true
 }
 
 let devs = {
