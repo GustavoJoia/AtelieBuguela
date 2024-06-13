@@ -1,0 +1,44 @@
+{
+    "produtos":[
+        {
+            "url":"./img/produto-1.jpg",
+            "nome":"Bolsa Térmica",
+            "valor":"R$39,90"
+        },
+        {
+            "url":"./img/produto-2.png",
+            "nome":"Bolsa Vermelha",
+            "valor":"R$39,90"
+        },
+        {
+            "url":"./img/produto-3.jpg",
+            "nome":"Bolsa Azul",
+            "valor":"R$39,90"
+        },
+        {
+            "url":"./img/produto-4.jpg",
+            "nome":"Chaveiros de Coração",
+            "valor":"R$39,90"
+        },
+        {
+            "url":"./img/produto-5.jpg",
+            "nome":"Bolsa de Colo",
+            "valor":"R$39,90"
+        },
+        {
+            "url":"./img/produto-6.jpg",
+            "nome":"Bolsa de Colo Azul",
+            "valor":"R$39,90"
+        },
+        {
+            "url":"./img/produto-7.jpg",
+            "nome":"Pochete Preta",
+            "valor":"R$39,90"
+        },
+        {
+            "url":"./img/produto-8.jpg",
+            "nome":"Bolsa de Floral",
+            "valor":"R$39,90"
+        }
+    ]
+}

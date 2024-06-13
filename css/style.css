@@ -178,6 +178,22 @@ button{
     .text-information{
         width: 95%!important;
     }
+
+    #chatbot{
+        width: 90%!important;
+    }
+
+    #others-products{
+        width: 90%!important;
+    }
+
+    .product{
+        width: 90%!important;
+    }
+
+    .all-products{
+        width: 90%!important;
+    }
 }
 
 @media screen and (max-width: 490px){
@@ -599,6 +615,144 @@ footer{
     font-weight: 500;
 }
 
+#icon-chat{
+    width: 60px;
+    margin: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+
+}
+
+/*Chatbot*/
+#chatbot{
+    width: 420px;
+    background-color: var(--white-all);
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 6rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 0px 6px #0000003f;
+    padding: 1.5rem;
+    z-index: 999;
+    font-size: 0.8rem;
+    display: none;
+}
+
+#chatbot button{
+    background-color: #FA960D;
+    color: var(--white);
+    font-family: var(--font-text);
+    border-radius: 4px;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: 500ms;
+    outline: none;
+    font-style: italic;
+}
+
+#chatbot button:hover{
+    background-color: #fdab39;
+    transition: 500ms;
+}
+
+.choose-option{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.flex-row{
+    display: flex;
+    justify-content: start;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+#text-chatbot{
+    padding-top: 1rem;
+}
+
+#chat-ana{
+    width: 60px;
+}
+
+#flex-chat{
+    display: flex;
+    justify-content: end;
+}
+
+/*Outros produtos*/
+#others-products{
+    margin-top: 10rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    height: 750px;
+    box-shadow: 3px 2px 6px #0000006c;
+    z-index: 888;
+    overflow-y: scroll;
+    display: none;
+}
+
+#click-product, #close{
+    cursor: pointer;
+}
+
+#top-others{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    color: var(--brown);
+}
+
+#all-products{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5%;
+}
+
+.product-name{
+    font-weight: 600;
+    padding-top: 1rem;
+    font-size: 1rem;
+
+}
+
+.product{
+    margin-top: 1rem;
+    width: 230px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.all-products{
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+
+}
+
 /*Owl carousel estilização*/
 .owl-carousel .owl-item img{
     border-radius: 15px;
@@ -607,4 +761,25 @@ footer{
 .owl-carousel{
     padding-left: 15%;
     padding-right: 15%;
+}
+
+/*Scroll padrão*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilos para mobile */
+#others-products {
+    overflow-y: auto; /* Habilita o scroll vertical apenas quando necessário */
+    -webkit-overflow-scrolling: touch; 
+}
+
+/* Estilize o indicador de scroll */
+#others-products::-webkit-scrollbar {
+    width: 6px; /* Largura do indicador */
+}
+
+#others-products::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Cor do indicador */
+    border-radius: 3px; /* Arredondamento dos cantos do indicador */
 }

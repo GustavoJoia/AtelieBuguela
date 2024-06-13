@@ -19,41 +19,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-</head>
-<link rel="shortcut icon" type="imagex/png" href="img/logo-buguela.png">
-<title>Ateliê Buguela</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<style>
-    /*Estilização do Header Desktop*/
-    .title-buguela {
-        display: none;
-        font-family: var(--font-logo);
-        text-transform: uppercase;
-        font-size: 2.6rem;
-        padding: 1rem;
-        padding-top: 2rem;
-        color: var(--brown);
-    }
+    <link rel="shortcut icon" type="imagex/png" href="img/logo-buguela.png">
+    <title>Ateliê Buguela</title>
 
-    .bg-light {
-        background-color: transparent !important;
-    }
-
-    .navbar-light .navbar-toggler {
-        border: 0px;
-    }
-
-    @media screen and (min-width: 995px) {
-        #navbarNav {
-            display: flex;
-            justify-content: end;
-        }
-
+    <style>
+        /*Estilização do Header Desktop*/
         .title-buguela {
-            display: block;
+            display: none;
+            font-family: var(--font-logo);
+            text-transform: uppercase;
+            font-size: 2.6rem;
+            padding: 1rem;
+            padding-top: 2rem;
+            color: var(--brown);
         }
-    }
-</style>
+
+        .bg-light {
+            background-color: transparent !important;
+        }
+
+        .navbar-light .navbar-toggler {
+            border: 0px;
+        }
+
+        @media screen and (min-width: 995px) {
+            #navbarNav {
+                display: flex;
+                justify-content: end;
+            }
+
+            .title-buguela {
+                display: block;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -76,8 +77,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#box-aboutus">Sobre nós</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#news-store">Produtos</a>
+                    <li class="nav-item" id="click-product">
+                        <a class="nav-link">Produtos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#box-contact">Contato</a>
@@ -166,7 +167,11 @@
             <div id="information-the-rise">
                 <div class="text-information">
                     <p>
-                        No <strong>Ateliê Buguela</strong>, não apenas buscamos elevar a autoestima feminina, mas também valorizar a <strong>autenticidade e a singularidade</strong> de cada mulher. Nossos produtos são mais do que meros adornos; são manifestações de poder, orgulho e identidade. Convidamos você a explorar nosso universo de criações exclusivas e a descobrir a beleza que reside na intersecção entre tradição e inovação.
+                        No <strong>Ateliê Buguela</strong>, não apenas buscamos elevar a autoestima feminina, mas também
+                        valorizar a <strong>autenticidade e a singularidade</strong> de cada mulher. Nossos produtos são
+                        mais do que meros adornos; são manifestações de poder, orgulho e identidade. Convidamos você a
+                        explorar nosso universo de criações exclusivas e a descobrir a beleza que reside na intersecção
+                        entre tradição e inovação.
                     </p>
                 </div>
 
@@ -199,7 +204,7 @@
 
                 <div id="section-bottom">
                     <div class="items">
-                        <img class="item-section" src="./img/icon-moda.png" alt="">
+                        <img class="item-section" src="./img/icon-ajuda.png" alt="">
                         <h4>Ajuda</h4>
                         <p>Oferecemos suporte para navegação, escolha de produtos e finalização de compras.</p>
                     </div>
@@ -253,7 +258,8 @@
             <div class="text-storefront">
                 <div class="text-center">
                     <p>
-                        <strong>Cada peça criada</strong> do <strong>Ateliê Buguela</strong> é o resultado de um meticuloso processo de design e produção, onde a
+                        <strong>Cada peça criada</strong> do <strong>Ateliê Buguela</strong> é o resultado de um
+                        meticuloso processo de design e produção, onde a
                         qualidade é a prioridade absoluta. Utilizamos apenas os materiais mais nobres e inovadores, como
                         o
                         exclusivo <strong>couro vegano LuminaTex</strong> e o tecido de alta performance
@@ -327,6 +333,38 @@
         </div>
     </footer>
 
+    <img id="icon-chat" src="./img/chat.png" alt="">
+
+    <div id="flex-chat">
+        <section id="chatbot">
+            <div class="flex-row">
+                <img id="chat-ana" src="img/Buguela-logo.svg" alt="">
+                <p id="text-chatbot"><strong>Olá, no que posso ajudar?</strong></p>
+            </div>
+
+            <div class="choose-option">
+                <button class="option-button" id="loja">Existe loja física?</button>
+                <button class="option-button" id="horario">Qual o horário de funcionamento?</button>
+                <button class="option-button" id="entrega">É a pronta-entrega? Ou posso retirar?</button>
+                <button class="option-button" id="frete">Qual o custo do frete?</button>
+            </div>
+        </section>
+    </div>
+
+
+    <section id="others-products">
+        <div id="top-others">
+            <h3>Produtos</h3>
+            <img id="close" src="./img/close.png" alt="">
+        </div>
+
+        <div id="all-products"></div>
+
+
+    </section>
+
+    <script src="produtos.js"></script>
+    <script src="chatbot.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
@@ -349,7 +387,7 @@
                 }
             });
         });
-
     </script>
 </body>
+
 </html>

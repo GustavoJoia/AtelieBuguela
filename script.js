@@ -13,6 +13,3 @@ document.querySelector('.carousel-control.next').addEventListener('click', funct
     if (currentTransform < -200) currentTransform = 0;
     document.querySelector('.carousel-inner').style.transform = `translateX(${currentTransform}%)`;
 });
-
-$('.owl-prev').remove(); // Remove o botão "anterior"
-$('.owl-next').remove(); // Remove o botão "próximo"
